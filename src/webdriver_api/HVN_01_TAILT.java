@@ -28,6 +28,7 @@ public class HVN_01_TAILT {
 
 	@Test
 	public void TC_02_ACB() {
+		System.out.println("Test hook");
 	}
 
 	@AfterClass
