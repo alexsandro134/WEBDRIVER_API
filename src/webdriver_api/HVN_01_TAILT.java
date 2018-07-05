@@ -19,6 +19,7 @@ public class HVN_01_TAILT {
 		System.setProperty("webdriver.ie.driver",
 				".\\driver\\IEDriverServer.exe");
 		driver = new InternetExplorerDriver();
+		
 	}
 
 	@Test
