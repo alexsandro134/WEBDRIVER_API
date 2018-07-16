@@ -1,5 +1,6 @@
 package webdriver_api;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,6 +42,7 @@ public class HVN_01_TAILT {
 		
 		WebElement element = driver.findElement(By.xpath(""));
 		Select select = new Select(element);
+		Assert.assertFalse(select.isMultiple());
 	}
 
 	@AfterClass
