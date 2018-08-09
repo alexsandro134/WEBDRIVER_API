@@ -1,4 +1,4 @@
-package webdriver_api;
+package webdriver_api_01;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -8,11 +8,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class HVN_01_TAILT {
+public class TC_02_DemoTestNG_HVN_01_TAILT {
 
 	WebDriver driver;
+
+	@BeforeTest
+	public void beforeTest() {
+		System.out.println("Bf Test HVN_01");
+	}
 
 	@BeforeClass
 	public void beforeClass() {
@@ -39,7 +45,7 @@ public class HVN_01_TAILT {
 	@Test
 	public void TC_02_ACB() {
 		System.out.println("Test hook");
-		
+
 		WebElement element = driver.findElement(By.xpath(""));
 		Select select = new Select(element);
 		Assert.assertFalse(select.isMultiple());

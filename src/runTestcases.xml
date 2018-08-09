@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="classes" thread-count="3">
+	<parameter name="browser" value="chrome" />
+	<parameter name="username" value="alex" />
+
+	<test name="Run on CHROME">
+		<classes>
+			<class name="webdriver_api_01.TC_01_DemoTestNG" />
+			<!-- <class name="webdriver_api_01.TC_02_DemoTestNG_HVN_01_TAILT" /> -->
+		</classes>
+	</test>
+
+<!-- 	<test name="Run on FIREFOX">
+		<classes>
+			<class name="webdriver_api_01.TC_01_DemoTestNG" />
+		</classes>
+	</test>
+
+	<test name="Run on IE">
+		<classes>
+			<class name="webdriver_api_01.TC_01_DemoTestNG" />
+		</classes>
+	</test>
+ -->
+</suite>
